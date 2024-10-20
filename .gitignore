@@ -41,3 +41,16 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# FVM Version Cache
+.fvm/
+.fvmrc
+
+# Lock files
+pubspec.lock
+*.lock
+
+# Key files
+*.jks
+*key.properties
+*.keystore
