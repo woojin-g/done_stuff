@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792104536451",
+    "project_id": "done-stuff-stg",
+    "storage_bucket": "done-stuff-stg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792104536451:android:07427e4e55e85a8be0ceb6",
+        "android_client_info": {
+          "package_name": "com.emblueworld.done_stuff.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzsyLPnaG8wBfznYyEHzjuWVPCUXLxrA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
