@@ -1,3 +1,5 @@
+import 'package:done_stuff/core/router/router.dart';
+import 'package:done_stuff/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:done_stuff/core/firebase/core.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -35,14 +37,8 @@ class _MainAppState extends ConsumerState<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: ,
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello World!',
-          ),
-        ),
-      ),
+      theme: AppTheme.themeData,
+      routerConfig: ref.watch(routerProvider),
     );
   }
 }
