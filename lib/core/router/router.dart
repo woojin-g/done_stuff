@@ -1,8 +1,8 @@
-import 'package:done_stuff/feat/history/page/main.dart';
-import 'package:done_stuff/feat/home/shell_page/main.dart';
-import 'package:done_stuff/feat/onboarding/page/main.dart';
-import 'package:done_stuff/feat/record/page/main.dart';
-import 'package:done_stuff/feat/stuff_management/page/main.dart';
+import 'package:done_stuff/feat/history/ui/main.page.dart';
+import 'package:done_stuff/feat/home/ui/main.shell_page.dart';
+import 'package:done_stuff/feat/onboarding/ui/main.page.dart';
+import 'package:done_stuff/feat/record/ui/main.page.dart';
+import 'package:done_stuff/feat/stuff_management/ui/main.page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
