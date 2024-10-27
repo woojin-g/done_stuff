@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class HomeShellPage extends StatelessWidget {
-  const HomeShellPage({
+class MainShellPage extends StatelessWidget {
+  const MainShellPage({
     required this.navigationShell,
     super.key,
   });
@@ -12,6 +12,14 @@ class HomeShellPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.menu,
+          ),
+        ),
+      ),
       body: navigationShell,
     );
   }
