@@ -6,7 +6,7 @@ class AppTheme {
 
   static ThemeData buildThemeData() {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: const Color.fromARGB(255, 60, 117, 73),
+      seedColor: const Color(0xFF5100FF),
     );
 
     final filledButtonThemeData = FilledButtonThemeData(
