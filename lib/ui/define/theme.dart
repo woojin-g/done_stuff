@@ -11,6 +11,32 @@ class AppTheme {
 
     final textTheme = _buildTextTheme(context);
 
+    final bottomNavigationBarTheme = BottomNavigationBarThemeData(
+      type: BottomNavigationBarType.fixed,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      selectedItemColor: colorScheme.primary,
+      unselectedItemColor: colorScheme.onSurface,
+      selectedLabelStyle: textTheme.labelMedium!.copyWith(
+        fontWeight: FontWeight.bold,
+      ),
+    );
+
+    final tabBarTheme = TabBarTheme(
+      indicatorSize: TabBarIndicatorSize.tab,
+      labelStyle: textTheme.labelLarge!.copyWith(
+        fontWeight: FontWeight.bold,
+      ),
+      unselectedLabelStyle: textTheme.labelLarge!.copyWith(
+        fontWeight: FontWeight.normal,
+      ),
+    );
+
+    final bottomSheetThemeData = BottomSheetThemeData(
+      showDragHandle: true,
+      backgroundColor: colorScheme.surfaceBright,
+    );
+
     final filledButtonThemeData = FilledButtonThemeData(
       style: FilledButton.styleFrom(
         padding: const EdgeInsets.symmetric(
@@ -27,9 +53,31 @@ class AppTheme {
       ),
     );
 
+    final outlinedButtonThemeData = OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(
+          horizontal: CustomSize.m,
+          vertical: CustomSize.s,
+        ),
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(CustomSize.xs),
+        ),
+        textStyle: textTheme.bodyLarge!.copyWith(
+          fontWeight: FontWeight.bold,
+        ),
+        foregroundColor: colorScheme.primary,
+      ),
+    );
+
     return ThemeData(
       colorScheme: colorScheme,
+      textTheme: textTheme,
+      bottomNavigationBarTheme: bottomNavigationBarTheme,
+      tabBarTheme: tabBarTheme,
+      bottomSheetTheme: bottomSheetThemeData,
       filledButtonTheme: filledButtonThemeData,
+      outlinedButtonTheme: outlinedButtonThemeData,
     );
   }
 
