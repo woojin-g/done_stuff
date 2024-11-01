@@ -1,8 +1,7 @@
 import 'package:done_stuff/core/router/router.dart';
-import 'package:done_stuff/core/theme/theme.dart';
+import 'package:done_stuff/ui/define/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:done_stuff/core/firebase/core.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Future<void> main() async {
@@ -37,7 +36,7 @@ class _MainAppState extends ConsumerState<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: AppTheme.themeData,
+      theme: AppTheme.buildThemeData(),
       routerConfig: ref.watch(routerProvider),
     );
   }

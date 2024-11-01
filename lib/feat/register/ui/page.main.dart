@@ -1,5 +1,5 @@
 import 'package:done_stuff/feat/register/model/agreement_item.dart';
-import 'package:done_stuff/feat/register/ui/page.agreements.dart';
+import 'package:done_stuff/feat/register/ui/page.main.agreements.dart';
 import 'package:done_stuff/ui/define/size.dart';
 import 'package:done_stuff/utility/build_context_extension.dart';
 import 'package:flutter/material.dart';
