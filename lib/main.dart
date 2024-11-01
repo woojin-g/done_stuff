@@ -36,7 +36,7 @@ class _MainAppState extends ConsumerState<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: AppTheme.buildThemeData(),
+      theme: AppTheme.buildThemeData(context),
       routerConfig: ref.watch(routerProvider),
     );
   }
